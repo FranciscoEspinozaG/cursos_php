@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <div class="table-responsive">
+        <div class="table-responsive py-5">
             <table id="datos_usuario" class="table table-border table-striped">
                 <thead>
                     <tr>
@@ -92,6 +92,27 @@
 
     <!--Footer-->
     <?php include ('elementos/footer.php'); ?>
+
+    <!-- <script>
+        $(document).ready(function(){
+
+            var DataTable = $('#datos_usuario').DataTable({
+                "processing":true,
+                "serverSide":true,
+                "order":[],
+                "ajax":{
+                    url: "obtener_registros.php",
+                    type: "POST",
+                },
+                "columnDefs":[
+                    {
+                    "targets":[0, 3, 4],
+                    "orderable":false,
+                    },
+                ]
+            });
+        });
+    </script> -->
 
 </body>
 

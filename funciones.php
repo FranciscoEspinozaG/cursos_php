@@ -7,4 +7,22 @@
             move_uploaded_file($_FILES["inputImagen"]["tmp_name"], $ubicacion);
         }
     }
+
+    function obtener_nombre_imagen($id_usuario){
+        include("conexion.php");
+        $stmt = $conexion->prepare("SELECT imagen FROM usuarios WHERE id = '$id_usuario'");
+        $stmt->execute();
+        $resultado = $stmt->fetchAll();
+        foreach ($resultados as $resultado) {
+            return $resultado["imagen"];
+        }
+    }
+
+    function obtener_todos_registros(){
+        include("conexion.php");
+        $stmt = $conexion->prepare("SELECT * FROM usuarios");
+        $stmt->execute();
+        $resultado = $stmt->fetchAll();
+        return $stmt->rowCount();
+    }
 ?>
