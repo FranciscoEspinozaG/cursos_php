@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <script>
+    <!-- <script>
         let schemeColor = window.matchMedia("(prefers-color-scheme: dark)").matches;
         if(schemeColor){
             var darkMode = true;
-            document.write('<?php $darkMode = true ?>');
+            document.write('<//?php $darkMode = true ?>');
         }else{
             var darkMode = false;
-            document.write('<?php $darkMode = false ?>');
+            document.write('<//?php $darkMode = false ?>');
         }
     </script>
-    <?php
-        if($darkMode){
-            $schemeColor = 'dark';
-        }else{
-            $schemeColor = 'white';
-        }
+    <//?php
+        //if($darkMode){
+        //    $schemeColor = 'dark';
+        //}else{
+        //    $schemeColor = 'white';
+        //}
 
-        echo $schemeColor;
-        echo $darkMode;
-    ?>
+        //echo $schemeColor;
+        //echo $darkMode;
+    //?>-->
     <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57-<?php echo $schemeColor ?>.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60-<?php echo $schemeColor ?>.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72-<?php echo $schemeColor ?>.png">

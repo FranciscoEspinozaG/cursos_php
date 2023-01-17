@@ -93,10 +93,10 @@
     <!--Footer-->
     <?php include ('elementos/footer.php'); ?>
 
-    <!-- <script>
+    <script>
         $(document).ready(function(){
 
-            var DataTable = $('#datos_usuario').DataTable({
+            var DataTable = $('#datos_usuario').dataTable({
                 "processing":true,
                 "serverSide":true,
                 "order":[],
@@ -112,7 +112,7 @@
                 ]
             });
         });
-    </script> -->
+    </script>
 
 </body>
 
